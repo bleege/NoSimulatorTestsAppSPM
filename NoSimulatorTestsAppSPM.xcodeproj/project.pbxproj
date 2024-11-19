@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		A29142E02CEC2BC80080A015 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A29142C72CEC2BC60080A015 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A29142CE2CEC2BC60080A015;
-			remoteInfo = NoSimulatorTestsAppSPM;
-		};
-		A29142EA2CEC2BC80080A015 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A29142C72CEC2BC60080A015 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A29142CE2CEC2BC60080A015;
-			remoteInfo = NoSimulatorTestsAppSPM;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A29142CF2CEC2BC60080A015 /* NoSimulatorTestsAppSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoSimulatorTestsAppSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29142DF2CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoSimulatorTestsAppSPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29142E92CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoSimulatorTestsAppSPMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,34 +16,10 @@
 			path = NoSimulatorTestsAppSPM;
 			sourceTree = "<group>";
 		};
-		A29142E22CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NoSimulatorTestsAppSPMTests;
-			sourceTree = "<group>";
-		};
-		A29142EC2CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NoSimulatorTestsAppSPMUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A29142CC2CEC2BC60080A015 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29142DC2CEC2BC80080A015 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29142E62CEC2BC80080A015 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				A29142D12CEC2BC60080A015 /* NoSimulatorTestsAppSPM */,
-				A29142E22CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests */,
-				A29142EC2CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests */,
 				A29142D02CEC2BC60080A015 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				A29142CF2CEC2BC60080A015 /* NoSimulatorTestsAppSPM.app */,
-				A29142DF2CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests.xctest */,
-				A29142E92CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +70,6 @@
 			productReference = A29142CF2CEC2BC60080A015 /* NoSimulatorTestsAppSPM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A29142DE2CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A29142F62CEC2BC80080A015 /* Build configuration list for PBXNativeTarget "NoSimulatorTestsAppSPMTests" */;
-			buildPhases = (
-				A29142DB2CEC2BC80080A015 /* Sources */,
-				A29142DC2CEC2BC80080A015 /* Frameworks */,
-				A29142DD2CEC2BC80080A015 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A29142E12CEC2BC80080A015 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A29142E22CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests */,
-			);
-			name = NoSimulatorTestsAppSPMTests;
-			packageProductDependencies = (
-			);
-			productName = NoSimulatorTestsAppSPMTests;
-			productReference = A29142DF2CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A29142E82CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A29142F92CEC2BC80080A015 /* Build configuration list for PBXNativeTarget "NoSimulatorTestsAppSPMUITests" */;
-			buildPhases = (
-				A29142E52CEC2BC80080A015 /* Sources */,
-				A29142E62CEC2BC80080A015 /* Frameworks */,
-				A29142E72CEC2BC80080A015 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A29142EB2CEC2BC80080A015 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A29142EC2CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests */,
-			);
-			name = NoSimulatorTestsAppSPMUITests;
-			packageProductDependencies = (
-			);
-			productName = NoSimulatorTestsAppSPMUITests;
-			productReference = A29142E92CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +82,6 @@
 				TargetAttributes = {
 					A29142CE2CEC2BC60080A015 = {
 						CreatedOnToolsVersion = 16.1;
-					};
-					A29142DE2CEC2BC80080A015 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = A29142CE2CEC2BC60080A015;
-					};
-					A29142E82CEC2BC80080A015 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = A29142CE2CEC2BC60080A015;
 					};
 				};
 			};
@@ -201,28 +100,12 @@
 			projectRoot = "";
 			targets = (
 				A29142CE2CEC2BC60080A015 /* NoSimulatorTestsAppSPM */,
-				A29142DE2CEC2BC80080A015 /* NoSimulatorTestsAppSPMTests */,
-				A29142E82CEC2BC80080A015 /* NoSimulatorTestsAppSPMUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A29142CD2CEC2BC60080A015 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29142DD2CEC2BC80080A015 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29142E72CEC2BC80080A015 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +122,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29142DB2CEC2BC80080A015 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29142E52CEC2BC80080A015 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A29142E12CEC2BC80080A015 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A29142CE2CEC2BC60080A015 /* NoSimulatorTestsAppSPM */;
-			targetProxy = A29142E02CEC2BC80080A015 /* PBXContainerItemProxy */;
-		};
-		A29142EB2CEC2BC80080A015 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A29142CE2CEC2BC60080A015 /* NoSimulatorTestsAppSPM */;
-			targetProxy = A29142EA2CEC2BC80080A015 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A29142F12CEC2BC80080A015 /* Debug */ = {
@@ -446,78 +302,6 @@
 			};
 			name = Release;
 		};
-		A29142F72CEC2BC80080A015 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 98VS3NV9WE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.leege.NoSimulatorTestsAppSPMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoSimulatorTestsAppSPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoSimulatorTestsAppSPM";
-			};
-			name = Debug;
-		};
-		A29142F82CEC2BC80080A015 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 98VS3NV9WE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.leege.NoSimulatorTestsAppSPMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoSimulatorTestsAppSPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoSimulatorTestsAppSPM";
-			};
-			name = Release;
-		};
-		A29142FA2CEC2BC80080A015 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 98VS3NV9WE;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.leege.NoSimulatorTestsAppSPMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NoSimulatorTestsAppSPM;
-			};
-			name = Debug;
-		};
-		A29142FB2CEC2BC80080A015 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 98VS3NV9WE;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.leege.NoSimulatorTestsAppSPMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NoSimulatorTestsAppSPM;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,24 +319,6 @@
 			buildConfigurations = (
 				A29142F42CEC2BC80080A015 /* Debug */,
 				A29142F52CEC2BC80080A015 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A29142F62CEC2BC80080A015 /* Build configuration list for PBXNativeTarget "NoSimulatorTestsAppSPMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A29142F72CEC2BC80080A015 /* Debug */,
-				A29142F82CEC2BC80080A015 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A29142F92CEC2BC80080A015 /* Build configuration list for PBXNativeTarget "NoSimulatorTestsAppSPMUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A29142FA2CEC2BC80080A015 /* Debug */,
-				A29142FB2CEC2BC80080A015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
