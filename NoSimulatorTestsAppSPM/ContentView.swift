@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import NoSimulatorModel
 
 struct ContentView: View {
     var body: some View {
