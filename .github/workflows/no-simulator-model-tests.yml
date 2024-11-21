@@ -19,4 +19,6 @@ jobs:
     - name: Generate Core Data Model
       run: /Applications/Xcode.app/Contents/Developer/usr/bin/momc --sdkroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk --iphoneos-deployment-target 18.0 --module NoSimulatorModel NoSimulatorModel/Sources/NoSimulatorModel/Resources/NoSimulatorCoreDataModel.xcdatamodeld NoSimulatorModel/Sources/NoSimulatorModel/Resources
     - name: Run tests
-      run: swift test -v
+      run: 
+        cd NoSimulatorModel
+        swift test -v
