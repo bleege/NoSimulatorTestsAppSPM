@@ -17,7 +17,8 @@ let package = Package(
         .target(
             name: "NoSimulatorModel",
             resources: [
-                .copy("Resources/NoSimulatorCoreDataModel.xcdatamodeld")
+                .copy("Resources/NoSimulatorCoreDataModel.xcdatamodeld"),
+                .copy("Resources/NoSimulatorCoreDataModel.momd")
             ]
         ),
         .testTarget(
@@ -26,8 +27,3 @@ let package = Package(
         ),
     ]
 )
-
-
-// Compile Model
-// /Applications/Xcode.app/Contents/Developer/usr/bin/momc --sdkroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk --iphoneos-deployment-target 18.0 --module NoSimulatorModel /Users/brad/development/NoSimulatorTestsAppSPM/NoSimulatorModel/Sources/NoSimulatorModel/Resources/NoSimulatorCoreDataModel.xcdatamodeld /Users/brad/development/NoSimulatorTestsAppSPM/NoSimulatorModel/Sources/NoSimulatorModel/Resources
-
