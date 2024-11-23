@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "NoSimulatorModel",
             resources: [
-                .copy("Resources")
+                .copy("Resources/NoSimulatorCoreDataModel.xcdatamodeld")
             ]
         ),
         .testTarget(
