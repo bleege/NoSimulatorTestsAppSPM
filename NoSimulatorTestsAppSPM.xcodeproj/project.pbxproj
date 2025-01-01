@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22BD1B92D25E45C008FCEF7 /* NoSimulatorData in Frameworks */ = {isa = PBXBuildFile; productRef = A22BD1B82D25E45C008FCEF7 /* NoSimulatorData */; };
 		A29142FF2CEC2FA90080A015 /* NoSimulatorModel in Frameworks */ = {isa = PBXBuildFile; productRef = A29142FE2CEC2FA90080A015 /* NoSimulatorModel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A22BD1B62D25E433008FCEF7 /* NoSimulatorData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NoSimulatorData; sourceTree = "<group>"; };
 		A29142CF2CEC2BC60080A015 /* NoSimulatorTestsAppSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoSimulatorTestsAppSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29142FC2CEC2CFB0080A015 /* NoSimulatorModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NoSimulatorModel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22BD1B92D25E45C008FCEF7 /* NoSimulatorData in Frameworks */,
 				A29142FF2CEC2FA90080A015 /* NoSimulatorModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				A29142D12CEC2BC60080A015 /* NoSimulatorTestsAppSPM */,
+				A22BD1B62D25E433008FCEF7 /* NoSimulatorData */,
 				A29142FC2CEC2CFB0080A015 /* NoSimulatorModel */,
 				A29142D02CEC2BC60080A015 /* Products */,
 			);
@@ -73,6 +77,7 @@
 			name = NoSimulatorTestsAppSPM;
 			packageProductDependencies = (
 				A29142FE2CEC2FA90080A015 /* NoSimulatorModel */,
+				A22BD1B82D25E45C008FCEF7 /* NoSimulatorData */,
 			);
 			productName = NoSimulatorTestsAppSPM;
 			productReference = A29142CF2CEC2BC60080A015 /* NoSimulatorTestsAppSPM.app */;
@@ -104,6 +109,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A29142FD2CEC2FA90080A015 /* XCLocalSwiftPackageReference "NoSimulatorModel" */,
+				A22BD1B72D25E45C008FCEF7 /* XCLocalSwiftPackageReference "NoSimulatorData" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A29142D02CEC2BC60080A015 /* Products */;
@@ -337,6 +343,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		A22BD1B72D25E45C008FCEF7 /* XCLocalSwiftPackageReference "NoSimulatorData" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = NoSimulatorData;
+		};
 		A29142FD2CEC2FA90080A015 /* XCLocalSwiftPackageReference "NoSimulatorModel" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = NoSimulatorModel;
@@ -344,6 +354,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A22BD1B82D25E45C008FCEF7 /* NoSimulatorData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NoSimulatorData;
+		};
 		A29142FE2CEC2FA90080A015 /* NoSimulatorModel */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NoSimulatorModel;
