@@ -10,7 +10,7 @@ import CoreData
 
 public protocol CoreDataManager {
     func saveButtonTap(date: Date) throws
-    func loadAllButtonTaps() throws -> [ButtonTap]
+    func loadAllButtonTaps() throws -> [ButtonTapEntity]
 }
 
 public class DefaultCoreDataManager: CoreDataManager {
@@ -26,7 +26,7 @@ public class DefaultCoreDataManager: CoreDataManager {
         let context = persistentContainer.viewContext
         
         do {
-            let buttonTap = ButtonTap(context: context)
+            let buttonTap = ButtonTapEntity(context: context)
             buttonTap.id = UUID()
             buttonTap.dateTapped = date
 
@@ -38,14 +38,14 @@ public class DefaultCoreDataManager: CoreDataManager {
         
     }
     
-    public func loadAllButtonTaps() throws -> [ButtonTap] {
+    public func loadAllButtonTaps() throws -> [ButtonTapEntity] {
 
         let context = persistentContainer.viewContext
 
-        let request: NSFetchRequest<ButtonTap> = ButtonTap.fetchRequest()
+        let request: NSFetchRequest<ButtonTapEntity> = ButtonTapEntity.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(
             key: #keyPath(
-                ButtonTap.dateTapped
+                ButtonTapEntity.dateTapped
             ),
             ascending: false
         )]
