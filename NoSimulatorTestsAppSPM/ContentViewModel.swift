@@ -7,14 +7,10 @@
 
 import Foundation
 import NoSimulatorModel
-
-struct ButtonTapData: Identifiable {
-    let id: UUID
-    let tapDate: Date
-}
+import NoSimulatorData
 
 class DefaultContentViewModel: ContentViewModel {
-    @Published var buttonTaps = [ButtonTapData]()
+    @Published var buttonTaps = [ButtonTap]()
     
     private let modelRepository: ModelRepository
     
@@ -42,11 +38,7 @@ class DefaultContentViewModel: ContentViewModel {
     }
     
     private func loadButtonTaps() throws {
-        buttonTaps = try modelRepository.loadAllButtonTaps().compactMap {
-            guard let id = $0.id, let tapDate = $0.dateTapped else {
-                return nil
-            }
-            return ButtonTapData(id: id, tapDate: tapDate)
-        }
+        buttonTaps.removeAll()
+        buttonTaps.append(contentsOf: try modelRepository.loadAllButtonTaps())
     }
 }

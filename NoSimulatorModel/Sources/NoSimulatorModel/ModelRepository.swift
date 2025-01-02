@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import NoSimulatorData
 
 public protocol ModelRepository {
     func now() -> Date
 
     func saveButtonTap() throws
-    func loadAllButtonTaps() throws -> [ButtonTapEntity]
+    func loadAllButtonTaps() throws -> [ButtonTap]
 }
 
 public class DefaultModelRepository: ModelRepository {
@@ -42,7 +43,7 @@ public class DefaultModelRepository: ModelRepository {
         try coreDataManager.saveButtonTap(date: now())
     }
     
-    public func loadAllButtonTaps() throws -> [ButtonTapEntity] {
+    public func loadAllButtonTaps() throws -> [ButtonTap] {
         return try coreDataManager.loadAllButtonTaps()
     }
     

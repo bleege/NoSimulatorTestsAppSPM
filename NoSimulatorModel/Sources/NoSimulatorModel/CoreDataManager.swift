@@ -7,10 +7,11 @@
 
 import Foundation
 import CoreData
+import NoSimulatorData
 
 public protocol CoreDataManager {
     func saveButtonTap(date: Date) throws
-    func loadAllButtonTaps() throws -> [ButtonTapEntity]
+    func loadAllButtonTaps() throws -> [ButtonTap]
 }
 
 public class DefaultCoreDataManager: CoreDataManager {
@@ -38,7 +39,7 @@ public class DefaultCoreDataManager: CoreDataManager {
         
     }
     
-    public func loadAllButtonTaps() throws -> [ButtonTapEntity] {
+    public func loadAllButtonTaps() throws -> [ButtonTap] {
 
         let context = persistentContainer.viewContext
 
@@ -51,7 +52,8 @@ public class DefaultCoreDataManager: CoreDataManager {
         )]
         
         do {
-            return try context.fetch(request)
+            let buttonTaps = try context.fetch(request)
+            return buttonTaps.compactMap { $0.dataObject }
         } catch {
             print("Error fetching button taps: \(error)")
             throw ModelErrors.generic("Error fetching button taps.")

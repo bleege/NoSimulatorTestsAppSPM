@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct ButtonTap: Codable {
+public struct ButtonTap: Codable {
     
-    let id: UUID
-    let dateTapped: Date
+    public let id: UUID
+    public let dateTapped: Date
+    
+    public init(id: UUID, dateTapped: Date) {
+        self.id = id
+        self.dateTapped = dateTapped
+    }
     
 }
