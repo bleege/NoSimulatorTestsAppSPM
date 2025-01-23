@@ -5,11 +5,11 @@
 //  Created by Brad Leege on 11/8/24.
 //
 
-import NoSimulatorModel
+import NoSimulatorData
 import SwiftUI
 
 protocol ContentViewModel: ObservableObject {
-    var buttonTaps: [ButtonTapData] { get }
+    var buttonTaps: [ButtonTap] { get }
     
     func handleNowButtonTapped()
     func handleOnAppear()
@@ -33,7 +33,7 @@ struct ContentView<Model: ContentViewModel>: View {
                     }
                     HStack {
                         Spacer()
-                        Text(tap.tapDate.formatted(.dateTime))
+                        Text(tap.dateTapped.formatted(.dateTime))
                             .font(.caption)
                     }
                 }
@@ -51,8 +51,8 @@ struct ContentView<Model: ContentViewModel>: View {
 
 class ContentViewModelMock: ContentViewModel {
     @Published var buttonTaps = [
-        ButtonTapData(id: UUID(), tapDate: Date()),
-        ButtonTapData(id: UUID(), tapDate: Date())
+        ButtonTap(id: UUID(), dateTapped: Date()),
+        ButtonTap(id: UUID(), dateTapped: Date())
     ]
     
     func handleNowButtonTapped() { }

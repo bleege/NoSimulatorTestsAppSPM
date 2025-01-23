@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import NoSimulatorData
 
 public protocol CoreDataManager {
     func saveButtonTap(date: Date) throws
@@ -26,7 +27,7 @@ public class DefaultCoreDataManager: CoreDataManager {
         let context = persistentContainer.viewContext
         
         do {
-            let buttonTap = ButtonTap(context: context)
+            let buttonTap = ButtonTapEntity(context: context)
             buttonTap.id = UUID()
             buttonTap.dateTapped = date
 
@@ -42,16 +43,17 @@ public class DefaultCoreDataManager: CoreDataManager {
 
         let context = persistentContainer.viewContext
 
-        let request: NSFetchRequest<ButtonTap> = ButtonTap.fetchRequest()
+        let request: NSFetchRequest<ButtonTapEntity> = ButtonTapEntity.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(
             key: #keyPath(
-                ButtonTap.dateTapped
+                ButtonTapEntity.dateTapped
             ),
             ascending: false
         )]
         
         do {
-            return try context.fetch(request)
+            let buttonTaps = try context.fetch(request)
+            return buttonTaps.compactMap { $0.dataObject }
         } catch {
             print("Error fetching button taps: \(error)")
             throw ModelErrors.generic("Error fetching button taps.")

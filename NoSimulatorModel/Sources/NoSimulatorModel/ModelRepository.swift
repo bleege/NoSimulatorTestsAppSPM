@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NoSimulatorData
 
 public protocol ModelRepository {
     func now() -> Date
