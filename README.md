@@ -9,15 +9,17 @@ This enables unit tests to complete quicker while eliminating the risk of failur
 
 The project consists of:
 
-1. NoSimulatorTestsApp
+1. NoSimulatorTestsAppSPM
     * iOS App containing SwiftUI View and ViewModel
-2. Swift Package
+2. Swift Packages
+    * NoSimulatorData
+      * Data Transfer Objects
     * NoSimulatorModel
       * Data Layer with no dependencies on UI Frameworks
     * NoSimulatorModelTests
       * Unit Tests for NoSimulatorModel 
 
-<img width="311" alt="project-structure" src="https://github.com/user-attachments/assets/8055f58e-44f9-4c18-9a2e-5de47b86c48d">
+<img width="358" alt="project-structure" src="https://github.com/user-attachments/assets/943c0731-6d05-42d2-9bdf-14b5d2138776" />
 
 ## Architecture
 
